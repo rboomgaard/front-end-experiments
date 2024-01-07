@@ -1,0 +1,128 @@
+/* Site Stylesheet
+  1. Global Styles
+  2. Typography Styles
+  3. Structure Styles
+  4. Module Styles
+  5. Component Styles
+  6. Page Styles
+======================================== */
+
+/* 1. Global Styles
+======================================== */
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  box-sizing: border-box;
+} 
+
+/* 
+* {
+  border: 1px solid red !important;
+} */
+
+.main-chart-container {
+  display: block;
+  position: relative;
+  width: 240px;   /* 50% of the viewport width */
+  height: 400px;  /* 50% of the viewport height */
+  background-color: #f5f4f0;
+}
+
+.title-container {
+  display: block;
+  margin: 25px; 
+}
+
+.chart-container {
+  display: block;
+  position: relative;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 25px; 
+  height: 200px;
+  width: 200ps;
+}
+
+.x-axis {
+  position: absolute;
+  bottom: 0px;
+  width: 175px; 
+  height: 1px;
+  background-color: black;
+}
+
+.bar-container {
+  position: absolute;
+  bottom: 1px;
+  width: 75%; 
+  height: 200px;
+}
+
+.bar {
+  position: absolute;
+  display: inline-block;
+  background-color: #15607A;
+  width: 25px; 
+  margin-left: 1em; 
+  margin-right: 1em; 
+  bottom: 0px;
+}
+
+.bar:nth-child(1) {
+  left: 10px;
+}
+
+.bar:nth-child(2) {
+  left: 60px; /* Adjust this value based on the width and margin of your bars */
+}
+
+.bar:nth-child(3) {
+  left: 110px; /* Adjust this value */
+}
+
+.year {
+  position: absolute;
+  bottom: -25px; 
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center; 
+}
+
+.amount {
+  position: absolute;
+  top: -22px;
+  left: 50%; 
+  transform: translateX(-50%); 
+  margin-bottom: 10px; 
+}
+
+
+/* 2. Typography Styles 
+======================================== */
+
+h2 {
+  font-family: 'Mokoko', sans-serif; 
+  font-weight: 750; 
+}
+
+p {
+  font-family: 'Mokoko', sans-serif; 
+  font-weight: 200; 
+}
+
+.amount, .year {
+  font-family: 'Roboto', sans-serif; 
+  font-weight: 200; 
+  font-size: 15px;
+}
+
+
